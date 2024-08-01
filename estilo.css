@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cabesalho{
+    display: flex;
+    background-color: #1f6eaf;
+    height: 105px;
+    box-shadow: 1px 1px 10px black;
+}
+
+.cabesalho a{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    margin-left: 60px;
+}
+
+.label{
+    display: flex;
+    align-items: center;
+}
+
+
+.logo{
+    padding: 10px 0px 0px 40px;
+}
+
+.categoriac{
+    margin-top: 40px;
+    background-color: #ffffff;
+    width: 450px;
+    height: 400px;
+    text-align: center;
+    border-radius: 20px;
+    border-width: 30px;
+}
+
+.categoriac label{
+    color: rgb(0, 0, 0);
+}
+
+.botao input{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0);
+    border-width: 0px;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.input{
+    width: 220px;
+    border-radius: 22px;
+    border: 2px rgb(0, 0, 0) solid;
+    padding: 5px;
+    margin: 0px 0px 15px 25%;
+}
+
+.input input{
+    width: 80%;
+    border: none;
+    outline: none;
+}
+
+.categoriaC{
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+
+.page{
+    justify-content: center;
+    align-items: center;
+}
