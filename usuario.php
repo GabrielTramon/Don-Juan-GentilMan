@@ -17,7 +17,7 @@ if (isset($_POST['cadastrar']))
    $resultado = mysql_query($sql);
    if ($resultado === TRUE)
       {
-         echo 'Cadastro realizado com Sucesso';
+         header("Location:usuario.html");
       }
   }
    }

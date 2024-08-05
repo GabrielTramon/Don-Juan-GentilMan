@@ -7,14 +7,14 @@
 .cabesalho{
     display: flex;
     background-color: #1f6eaf;
-    height: 105px;
+    height: 100px;
     box-shadow: 1px 1px 10px black;
 }
 
 .cabesalho a{
     color: white;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 20px;
     margin-left: 60px;
 }
 
@@ -25,27 +25,28 @@
 
 
 .logo{
-    padding: 10px 0px 0px 40px;
+    padding: 7px 0px 0px 40px;
 }
 
-.categoriac{
+.CadastroUsuario{
     margin-top: 40px;
     background-color: #ffffff;
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 550px;
     text-align: center;
     border-radius: 20px;
     border-width: 30px;
     box-shadow: 0px 0px 10px 1px rgb(177, 174, 174);
 }
 
-.categoriac label{
+.CadastroUsuario label{
     color: #1f6eaf;
     margin-right: 230px;
 }
 
-.categoriac h1{
+.CadastroUsuario h1{
     color: #1f6eaf;
+    margin-top: 5px;
 }
 
 .botao input{
@@ -56,8 +57,9 @@
     height: 40px;
     color: rgb(255, 255, 255);
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: 30px;
     box-shadow: 0px 0px 3px 1px #103858;
+    margin-left: 12px;
 }
 
 .input{
@@ -66,7 +68,7 @@
     border-radius: 8px;
     border: 2px #197cce solid;
     padding: 5px;
-    margin: 0px 0px 25px 95px;
+    margin: 0px 0px 23px 143px;
 }
 
 .input input{
@@ -76,7 +78,7 @@
     outline: none;
 }
 
-.categoriaC{
+.CadastroUsuario{
     color: rgb(0, 0, 0);
     font-size: 15px;
 }
