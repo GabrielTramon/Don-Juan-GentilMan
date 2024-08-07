@@ -5,35 +5,35 @@ $banco = mysql_select_db('don juan cavalheiro');
 
 if (isset($_POST['cadastrar']))
 {
-  $nome  = $_POST['nome'];
-  $login = $_POST['login'];
-  $senha = $_POST['senha'];
-
-  if ( $nome != "" and $login != "" and $senha != "senha"){
-     //gravar no banco as informacoes
-   $sql = "INSERT INTO usuario (nome,login,senha)
-   VALUES ('$nome','$login','$senha')";
-
-   $resultado = mysql_query($sql);
-   if ($resultado === TRUE)
-      {
-         header("Location:usuario.html");
-      }
-  }
-   }
-  else
-  {
-     echo 'Erro ao gravar dados.';
-  }
-
+   $codigo = $_POST['codigo'];
+   $nome   = $_POST['nome'];
+   $login  = $_POST['login'];
+   $senha  = $_POST['senha'];
+      if ($codigo != "" and $nome != "" and $login != "" and $senha != ""){
+         //gravar no banco as informacoes
+         $sql = "INSERT INTO usuario (codigo,nome,login,senha)
+         VALUES ('$codigo','$nome','$login','$senha')";
+         $resultado = mysql_query($sql);
+            if ($resultado === TRUE)
+               {
+                  header("Location:usuario.html");
+               }
+            }
+            else
+            {
+               echo 'Erro ao gravar dados.';
+            }
+}
 // ---------------------------------------------
 
 if (isset($_POST['excluir']))
 {
-    $codigo = $_POST['codigo'];
-    $nome       = $_POST['nome'];
+   $codigo = $_POST['codigo'];
+   $nome   = $_POST['nome'];
+   $login  = $_POST['login'];
+   $senha  = $_POST['senha'];
   
-  $sql = "DELETE FROM classificacao WHERE codigo = '$codigo'";
+  $sql = "DELETE FROM usuario WHERE codigo = '$codigo'";
           
   $resultado = mysql_query($sql);
 
@@ -43,16 +43,18 @@ if (isset($_POST['excluir']))
   }
   else
   {
-     echo 'Erro ao excluir dados.';
+   echo 'Erro';
   }
 }
 
 if (isset($_POST['alterar']))
 {
-    $codigo = $_POST['codigo'];
-    $nome       = $_POST['nome'];
+   $codigo = $_POST['codigo'];
+   $nome   = $_POST['nome'];
+   $login  = $_POST['login'];
+   $senha  = $_POST['senha'];
 
-   $sql = "UPDATE classificacao SET nome='$nome' WHERE codigo ='$codigo'";
+   $sql = "UPDATE usuario SET nome='$nome' and login='$login' and senha='$senha',  WHERE codigo ='$codigo'";
 
   $resultado = mysql_query($sql);
 
@@ -62,19 +64,21 @@ if (isset($_POST['alterar']))
   }
   else
   {
-     echo 'Erro ao alterar dados.';
+   echo 'Erro';
   }
 }
 
 if (isset($_POST['pesquisar']))
 {
-   $sql = mysql_query("SELECT codigo,nome FROM classificacao");
+   $sql = mysql_query("SELECT codigo,nome,login,senha FROM usuario");
 
    echo "<b>Usuarios Cadastrados:</b><br><br>";
    while ($dados = mysql_fetch_object($sql))
    {
-    echo "codigo     :".$dados->codigo." ";
+    echo "codigo     :".$dados->codigo."<br>";
     echo "nome  :".$dados->nome. "<br>";
+    echo "login  :".$dados->login. "<br>";
+    echo "senha  :".$dados->senha. "<br><br>";
    }
 }
 ?>
