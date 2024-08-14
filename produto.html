@@ -20,14 +20,14 @@
             <a href="marca.html">Marca</a>
         </div>
     </div>
-    <div class="pagUsuario">
+    <div class="pageProduto">
         <div class="page">
-            <form name="formulario" method="post" action="usuario.php">
-                <div class="CadastroUsuario">
+            <form name="formulario" method="post" action="produto.php" enctype="multipart/form-data">
+                <div class="CadastroProduto">
                         <br>
                             <br>
                         <br>
-                        <h1>Cadastrar Usuario</h1>
+                        <h1>Cadastrar Produto</h1>
                         <br>
                             <br>
                         <br>
@@ -36,20 +36,33 @@
                             <i class="fa-solid fa-id-card"></i>
                             <input type="text" name="codigo" id="codigo" size=10 placeholder="Codigo">
                         </div>
-                        <label>Nome</label>
+                        <label>Descrição</label>
                         <div class="input">
-                            <i class="fa-regular fa-user"></i>
-                            <input type="text" name="nome" id="nome" size=10 placeholder="Nome">
+                            <i class="fa-solid fa-book"></i>
+                            <input type="text" name="descricao" id="descricao" size=10 placeholder="Descrição">
                         </div>
-                        <label>Login</label>
+                        <label>Codmarca</label>
                         <div class="input">
-                            <i class="fa-solid fa-heading"></i>
-                            <input type="text" name="login" id="login" size=10 placeholder="Login">
+                            <i class="fa-solid fa-code"></i>
+                            <input type="text" name="codmarca" id="codmarca" size=10 placeholder="Codmarca">
                         </div>
-                        <label>Senha</label>
+                        <label>Codmodelo</label>
                         <div class="input">
-                            <i class="fa-solid fa-lock"></i>
-                            <input type="password" name="senha" id="senha" size=10 placeholder="Senha">
+                            <i class="fa-solid fa-code"></i>
+                            <input type="text" name="codmodelo" id="codmodelo" size=10 placeholder="Codmodelo">
+                        </div>
+                        <label>Valor</label>
+                        <div class="input">
+                            <i class="fa-solid fa-brazilian-real-sign"></i>
+                            <input type="number" name="valor" id="valor" size=10 placeholder="Valor">
+                        </div>
+                        <div class="inputfoto">
+                            <i class="fa-solid fa-photo-film"></i>
+                            <input type="file" name="foto1" id="foto1" size=10 placeholder="Foto do produto">
+                        </div>
+                        <div class="inputfoto">
+                            <i class="fa-solid fa-photo-film"></i>
+                            <input type="file" name="foto2" id="foto2" size=10 placeholder="Foto do produto">
                         </div>
                     <div class="botao">
                         <input type="submit" value="cadastrar" id="cadastrar" name="cadastrar">

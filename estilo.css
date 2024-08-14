@@ -6,7 +6,7 @@
 
 .cabesalho{
     display: flex;
-    background-color: #1f6eaf;
+    background-color: #0e95e4;
     height: 100px;
     box-shadow: 1px 1px 10px black;
 }
@@ -15,13 +15,16 @@
     color: white;
     text-decoration: none;
     font-size: 20px;
-    margin-left: 60px;
 }
 
 .label{
     display: flex;
     align-items: center;
-    margin: 0px 0px 0px 300px;
+    margin: 0px 0px 0px 12%;
+}
+
+.label a{
+    margin-left: 100px;
 }
 
 .logo{
@@ -114,4 +117,39 @@
 .CadastroModeloEmarca h1{
     color: #1f6eaf;
     margin-top: 5px;
+}
+
+.CadastroProduto{
+    margin-top: 70px;
+    background-color: #ffffff;
+    width: 600px;
+    height: 805px;
+    text-align: center;
+    border-radius: 20px;
+    border-width: 30px;
+    box-shadow: 0px 0px 10px 1px rgb(177, 174, 174);
+}
+
+.CadastroProduto label{
+    color: #1f6eaf;
+    margin-right: 230px;
+}
+
+.CadastroProduto h1{
+    color: #1f6eaf;
+    margin-top: 5px;
+}
+
+.pageProduto{
+    background-color: #e7ecef8c;
+    width: 100%;
+    height: 1000px;
+}
+
+.inputfoto{
+    height: 24px;
+    width: 300px;
+    padding: 5px;
+    margin: 0px 0px 10px 143px;
+    padding-top: 25px;
 }
