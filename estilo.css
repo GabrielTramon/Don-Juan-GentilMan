@@ -15,16 +15,21 @@
     color: white;
     text-decoration: none;
     font-size: 20px;
+
+}
+
+.cabesalho a:hover{
+    color: rgb(0, 34, 43);
 }
 
 .label{
     display: flex;
     align-items: center;
-    margin: 0px 0px 0px 12%;
+    padding-left: 10%;
 }
 
 .label a{
-    margin-left: 100px;
+    padding-left: 100px;
 }
 
 .logo{
@@ -60,7 +65,7 @@
     height: 40px;
     color: rgb(255, 255, 255);
     font-size: 20px;
-    margin-top: 30px;
+    margin-top: 35px;
     box-shadow: 0px 0px 3px 1px #103858;
     margin-left: 12px;
 }
@@ -151,5 +156,5 @@
     width: 300px;
     padding: 5px;
     margin: 0px 0px 10px 143px;
-    padding-top: 25px;
+    padding-top: 30px;
 }
